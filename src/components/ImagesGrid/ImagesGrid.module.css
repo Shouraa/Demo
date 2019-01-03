@@ -1,7 +1,7 @@
 .Images {
   /* margin: auto 32px; */
-  padding: 32px;
   background-color: #98d5f8;
+  padding-top: 16px;
   height: 100%;
   /* width: 100%; */
   display: grid;
