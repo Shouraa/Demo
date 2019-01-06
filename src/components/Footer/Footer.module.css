@@ -1,0 +1,10 @@
+.Footer {
+  background-color: #e7eaeb;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.Footer span {
+  font-size: 16px;
+  color: rgb(44, 44, 143);
+}

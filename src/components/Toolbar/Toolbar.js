@@ -4,7 +4,7 @@ import classes from "./Toolbar.module.css";
 
 const Toolbar = () => (
   <header className={classes.Toolbar}>
-    <div className={classes.Div}>
+    <div>
       <a href="index.html" className={classes.Brand}>
         LOGO
       </a>
