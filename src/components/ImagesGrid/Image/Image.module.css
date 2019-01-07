@@ -1,0 +1,30 @@
+.Image {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: 300px 40px 40px;
+  background-color: white;
+  border: solid 1px black;
+}
+
+.Image img {
+  width: 300px;
+  height: 300px;
+  grid-column: 1 / 3;
+  align-self: auto;
+  border: solid 1px black;
+}
+
+.Caption {
+  grid-row: 2 / 3;
+  grid-column: 1/3;
+}
+
+.Comments {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  border: solid 1px black;
+}
+
+.Likes {
+  grid-row: 3 / 4;
+}
