@@ -1,13 +1,14 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 import classes from "./Toolbar.module.css";
 
 const Toolbar = () => (
   <header className={classes.Toolbar}>
     <div>
-      <a href="index.html" className={classes.Brand}>
+      <NavLink to="/" className={classes.Brand}>
         LOGO
-      </a>
+      </NavLink>
     </div>
 
     <nav className={classes.MainNav}>

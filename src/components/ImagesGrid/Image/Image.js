@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import classes from "./Image.module.css";
 
 const Image = props => (
   <div className={classes.Image}>
-    <NavLink to="./singleImage">
+    <Link to={"/singleImage/" + props.id}>
       <img src={props.src} alt={props.description} />
-    </NavLink>
+    </Link>
 
     <h4 className={classes.Caption}>Caption</h4>
 
