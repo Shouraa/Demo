@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 150px);
   grid-template-rows: 300px 40px 40px;
   background-color: white;
-  border: solid 1px black;
+  border-radius: 3px;
 }
 
 .Image img {
@@ -13,7 +13,6 @@
   /* grid-row: 1 / 2; */
 
   align-self: auto;
-  border: solid 1px black;
 }
 
 .Caption {

@@ -3,15 +3,14 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import SingleImage from "./containers/SingleImage/SingleImage";
-import ImagesGrid from "./containers/FrontPage/FrontPage";
+// import ImagesGrid from "./containers/FrontPage/FrontPage";
 import "./App.css";
 import FrontPage from "./containers/FrontPage/FrontPage";
 import axios from "axios";
 
 class App extends Component {
   state = {
-    images: [],
-    clickedImage: null
+    images: []
   };
 
   componentDidMount() {
@@ -36,12 +35,12 @@ class App extends Component {
             <Switch>
               <Route
                 path="/singleImage/:id"
-                render={props => <SingleImage images={this.state.images} />}
+                render={props => <SingleImage {...this.state} />}
               />
               <Route
                 path="/"
                 exact
-                render={props => <FrontPage imageGrid={this.state.images} />}
+                render={props => <FrontPage {...this.state} />}
               />
             </Switch>
           </Layout>
