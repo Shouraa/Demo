@@ -4,7 +4,9 @@ import classes from "./ImagesGrid.module.css";
 import Image from "./Image/Image";
 
 const ImagesGrid = props => {
-  const images = props.images.map(image => {
+  let images = [];
+
+  images = props.images.map(image => {
     return <Image src={image.urls.small} key={image.id} id={image.id} />;
   });
 

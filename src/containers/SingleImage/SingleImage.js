@@ -4,9 +4,9 @@ import SingleImagePage from "../../components/SingleImagePage/SingleImagePage";
 
 class SingleImage extends Component {
   render() {
-    console.log("[SinglePage]", this.props);
+    console.log("[SingleImage]", this.props.image);
 
-    return <SingleImagePage src={this.props.match.params.id} />;
+    return <SingleImagePage src={this.props.image.urls.regular} />;
   }
 }
 

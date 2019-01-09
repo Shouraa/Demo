@@ -13,10 +13,10 @@ const Toolbar = () => (
 
     <nav className={classes.MainNav}>
       <ul>
-        <li>Link</li>
-        <li className={classes.Login}>
-          <a href="#">SignUp/Login</a>
-        </li>
+        {/* <li>Link</li> */}
+        <NavLink to="//">
+          <li className={classes.Login}>SignUp/Login</li>
+        </NavLink>
       </ul>
     </nav>
   </header>

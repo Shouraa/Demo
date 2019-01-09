@@ -5,7 +5,7 @@ import classes from "./Image.module.css";
 
 const Image = props => (
   <div className={classes.Image}>
-    <Link to={"/singleImage/" + props.id}>
+    <Link className={classes.ImgWrapper} to={"/singleImage/" + props.id}>
       <img src={props.src} alt={props.description} />
     </Link>
 

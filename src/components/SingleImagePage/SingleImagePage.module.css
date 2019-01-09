@@ -7,13 +7,13 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas:
-    "i i i i i i c c c c c c"
-    "i i i i i i c c c c c c"
-    "i i i i i i c c c c c c"
-    "i i i i i i c c c c c c"
-    "i i i i i i a a a a a a"
-    "i i i i i i a a a a a a"
-    "l l l l l l a a a a a a";
+    "i i i i i i i c c c c c"
+    "i i i i i i i c c c c c"
+    "i i i i i i i c c c c c"
+    "i i i i i i i c c c c c"
+    "i i i i i i i a a a a a"
+    "i i i i i i i a a a a a"
+    "l l l l l l l a a a a a";
   grid-gap: 8px;
   align-items: center;
   text-align: center;

@@ -19,7 +19,7 @@ class App extends Component {
         "https://api.unsplash.com/photos/?client_id=add2d2d52391495814a84b22b6089261f7133c5ac4b5a22017e11a4c7a6dc60b"
       )
       .then(response => {
-        console.log(response.data);
+        // console.log(response.data);
         this.setState({ images: response.data });
       })
       .catch(error => {
@@ -27,6 +27,10 @@ class App extends Component {
       });
   }
 
+  filterHandler = id => {
+    return this.state.images.find(image => image.id === id);
+  };
+  // props.filter(props.match.params.id === id) =>
   render() {
     return (
       <div>
@@ -35,7 +39,12 @@ class App extends Component {
             <Switch>
               <Route
                 path="/singleImage/:id"
-                render={props => <SingleImage {...this.state} />}
+                render={props => (
+                  <SingleImage
+                    image={this.filterHandler(props.match.params.id)}
+                    {...props}
+                  />
+                )}
               />
               <Route
                 path="/"

@@ -3,11 +3,10 @@ import React from "react";
 import classes from "./SingleImagePage.module.css";
 
 const SingleImagePage = props => {
-  // console.log(props);
   return (
     <div className={classes.SingleImagePage}>
       <div className={classes.ImageContainer}>
-        <img src="https://via.placeholder.com/500" />
+        <img src={props.src} alt="whatever" />
       </div>
       <div className={classes.Like}>2</div>
       <div className={classes.Comments}>3</div>
