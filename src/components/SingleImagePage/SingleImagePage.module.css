@@ -1,6 +1,6 @@
 .SingleImagePage {
   background-color: #b1e0f0;
-  padding: 96px 0;
+  padding: 116px 196px;
   height: 100%;
   width: 100%;
   display: grid;
@@ -14,7 +14,7 @@
     "i i i i i i i a a a a a"
     "i i i i i i i a a a a a"
     "l l l l l l l a a a a a";
-  grid-gap: 8px;
+  /* grid-gap: 8px; */
   align-items: center;
   text-align: center;
   position: relative;
@@ -23,6 +23,15 @@
 .ImageContainer {
   grid-area: i;
   border: 1px solid black;
+  /* width: 400px;
+  height: 500px; */
+}
+
+.SingleImagePage img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: 50% 50%;
 }
 
 .Like {

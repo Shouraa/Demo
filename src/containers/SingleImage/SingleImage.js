@@ -6,7 +6,7 @@ class SingleImage extends Component {
   render() {
     console.log("[SingleImage]", this.props.image);
 
-    return <SingleImagePage src={this.props.image.urls.regular} />;
+    return <SingleImagePage img={this.props.image} />;
   }
 }
 

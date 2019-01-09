@@ -9,7 +9,7 @@ const Image = props => (
       <img src={props.src} alt={props.description} />
     </Link>
 
-    <h4 className={classes.Caption}>Caption</h4>
+    <h4 className={classes.Caption}>{props.caption}</h4>
 
     <h4 className={classes.Comments}>Comments</h4>
     <h4 className={classes.Likes}>Likes</h4>

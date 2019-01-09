@@ -6,11 +6,11 @@ const SingleImagePage = props => {
   return (
     <div className={classes.SingleImagePage}>
       <div className={classes.ImageContainer}>
-        <img src={props.src} alt="whatever" />
+        <img src={props.img.urls.regular} alt={props.img.description} />
       </div>
-      <div className={classes.Like}>2</div>
-      <div className={classes.Comments}>3</div>
-      <div className={classes.AddNew}>4</div>
+      <div className={classes.Like}>Likes: {props.img.likes}</div>
+      <div className={classes.Comments}>Comments</div>
+      <div className={classes.AddNew}>Form</div>
     </div>
   );
 };

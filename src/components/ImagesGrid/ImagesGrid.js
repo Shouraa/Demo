@@ -7,7 +7,14 @@ const ImagesGrid = props => {
   let images = [];
 
   images = props.images.map(image => {
-    return <Image src={image.urls.small} key={image.id} id={image.id} />;
+    return (
+      <Image
+        src={image.urls.small}
+        key={image.id}
+        id={image.id}
+        caption={image.description}
+      />
+    );
   });
 
   return <div className={classes.ImagesGrid}>{images}</div>;

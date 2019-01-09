@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import SingleImage from "./containers/SingleImage/SingleImage";
-// import ImagesGrid from "./containers/FrontPage/FrontPage";
 import "./App.css";
 import FrontPage from "./containers/FrontPage/FrontPage";
 import axios from "axios";
@@ -30,7 +29,7 @@ class App extends Component {
   filterHandler = id => {
     return this.state.images.find(image => image.id === id);
   };
-  // props.filter(props.match.params.id === id) =>
+
   render() {
     return (
       <div>
