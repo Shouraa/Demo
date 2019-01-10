@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./Comments.module.css";
+// import classes from "./Comments.module.css";
 
 const Comments = props => {
   console.log("[Propss]", props);
