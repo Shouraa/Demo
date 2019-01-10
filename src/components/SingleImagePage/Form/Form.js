@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 // import classes from "./Form.module.css";
 
@@ -10,6 +11,20 @@ class Form extends Component {
 
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
+  };
+
+  handleClick = event => {
+    event.preventDefault();
+    const commentData = {
+      name: this.state.name,
+      comment: this.state.comment
+    };
+    axios
+      .post("https://jsonplaceholder.typicode.com/posts/", commentData)
+      .then(response => {
+        console.log(response);
+        this.setState({ name: "", comment: "" });
+      });
   };
 
   render() {
@@ -31,7 +46,7 @@ class Form extends Component {
           placeholder="Your Comment"
         />
         <div>
-          <button>SEND</button>
+          <button onClick={this.handleClick}>SEND</button>
         </div>
       </form>
     );
