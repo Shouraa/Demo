@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
-import SingleImage from "./containers/SingleImageContainer/SingleImageContainer";
+import SingleImageContainer from "./containers/SingleImageContainer/SingleImageContainer";
 import "./App.css";
 import FrontPage from "./containers/FrontPage/FrontPage";
 import axios from "axios";
@@ -39,7 +39,7 @@ class App extends Component {
               <Route
                 path="/singleImage/:id"
                 render={props => (
-                  <SingleImage
+                  <SingleImageContainer
                     image={this.filterHandler(props.match.params.id)}
                     {...props}
                   />

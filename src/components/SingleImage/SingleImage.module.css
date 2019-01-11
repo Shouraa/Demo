@@ -1,50 +1,12 @@
-.SingleImagePage {
-  background-color: #b1e0f0;
-  padding: 116px 196px;
-  height: 100%;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-areas:
-    "i i i i i i i c c c c c"
-    "i i i i i i i c c c c c"
-    "i i i i i i i c c c c c"
-    "i i i i i i i c c c c c"
-    "i i i i i i i c c c c c"
-    "i i i i i i i a a a a a"
-    "l l l l l l l a a a a a";
-  /* grid-gap: 8px; */
-  align-items: center;
-  text-align: center;
-  position: relative;
+.SingleImage {
 }
 
-.ImageContainer {
-  grid-area: i;
-  border: 1px solid black;
-  /* width: 400px;
-  height: 500px; */
-}
-
-.SingleImagePage img {
+.SingleImage img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   object-position: 50% 50%;
 }
 
-.Like {
-  grid-area: l;
-}
-
-.Comments {
-  grid-area: c;
-  border: 1px solid black;
-  background-color: white;
-}
-
-.AddNew {
-  grid-area: a;
-  border: 1px solid black;
+.Likes {
 }
