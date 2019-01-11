@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-import SingleImagePage from "../../components/SingleImagePage/SingleImagePage";
+import SingleImagePage from "../../components/SingleImage/SingleImage";
 
-class SingleImage extends Component {
+class SingleImageContainer extends Component {
   render() {
     console.log("[SingleImage]", this.props.image);
 
@@ -10,4 +10,4 @@ class SingleImage extends Component {
   }
 }
 
-export default SingleImage;
+export default SingleImageContainer;

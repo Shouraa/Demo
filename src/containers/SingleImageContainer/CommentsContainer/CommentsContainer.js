@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import Comments from "../../../components/SingleImagePage/Comments/Comments";
+import Comments from "../../../components/SingleImage/Comments/Comments";
 
 class CommentsContainer extends Component {
   state = {

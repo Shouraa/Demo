@@ -1,9 +1,9 @@
 import React from "react";
 
-import classes from "./SingleImagePage.module.css";
+import classes from "./SingleImage.module.css";
 
-import CommentsContainer from "../../containers/SingleImage/CommentsContainer/CommentsContainer";
-import FormContainer from "../../containers/SingleImage/FormContainer/FormContainer";
+import CommentsContainer from "../../containers/SingleImageContainer/CommentsContainer/CommentsContainer";
+import Form from "../SingleImage/Form/Form";
 
 const SingleImagePage = props => {
   let comments = <CommentsContainer />;
@@ -15,7 +15,7 @@ const SingleImagePage = props => {
       <div className={classes.Like}>Likes: {props.img.likes}</div>
       <div className={classes.Comments}>{comments}</div>
       <div className={classes.AddNew}>
-        <FormContainer />
+        <Form />
       </div>
     </div>
   );
