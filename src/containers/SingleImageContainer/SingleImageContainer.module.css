@@ -1,0 +1,21 @@
+.SingleImageContainer {
+  background-color: #b1e0f0;
+  padding: 116px 196px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-gap: 8px;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.SingleImage {
+}
+
+.Comments {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}

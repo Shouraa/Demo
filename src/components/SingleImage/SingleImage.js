@@ -2,23 +2,15 @@ import React from "react";
 
 import classes from "./SingleImage.module.css";
 
-import CommentsContainer from "../../containers/SingleImageContainer/CommentsContainer/CommentsContainer";
-import Form from "../SingleImage/Form/Form";
-
-const SingleImagePage = props => {
-  let comments = <CommentsContainer />;
+const SingleImage = props => {
   return (
-    <div className={classes.SingleImagePage}>
-      <div className={classes.ImageContainer}>
+    <div>
+      <div className={classes.SingleImage}>
         <img src={props.img.urls.regular} alt={props.img.description} />
       </div>
-      <div className={classes.Like}>Likes: {props.img.likes}</div>
-      <div className={classes.Comments}>{comments}</div>
-      <div className={classes.AddNew}>
-        <Form />
-      </div>
+      <div className={classes.Likes}>Likes: {props.img.likes}</div>
     </div>
   );
 };
 
-export default SingleImagePage;
+export default SingleImage;
