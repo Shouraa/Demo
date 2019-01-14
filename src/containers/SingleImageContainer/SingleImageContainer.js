@@ -19,9 +19,10 @@ class SingleImageContainer extends Component {
 
   handleChange = event => {
     this.setState({ [event.target.name]: event.target.value });
+    console.log("changed");
   };
 
-  handleClick = event => {
+  handleSubmit = event => {
     event.preventDefault();
     const commentData = {
       name: this.state.name,
@@ -48,7 +49,10 @@ class SingleImageContainer extends Component {
             <CommentsContainer />
           </div>
           <div>
-            <Form inputChanged={this.handleChange} clicked={this.handleClick} />
+            <Form
+              inputChanged={this.handleChange}
+              clicked={this.handleSubmit}
+            />
           </div>
         </div>
       </div>

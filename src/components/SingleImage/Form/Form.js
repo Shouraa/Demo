@@ -3,6 +3,14 @@ import React, { Component } from "react";
 // import classes from "./Form.module.css";
 
 class Form extends Component {
+  changeHandler = event => {
+    this.props.inputChanged(event);
+  };
+
+  submitHandler = () => {
+    this.props.clicked();
+  };
+
   render() {
     return (
       <form>
@@ -12,7 +20,7 @@ class Form extends Component {
             name="name"
             value={this.props.name}
             placeholder="Your Name"
-            onChange={this.props.changed}
+            onChange={this.changeHandler}
           />
         </div>
         <div>
@@ -21,13 +29,13 @@ class Form extends Component {
             rows="8"
             name="comment"
             value={this.props.comment}
-            onChange={this.props.changed}
+            onChange={this.changeHandler}
             placeholder="Your Comment"
           />
         </div>
 
         <div>
-          <button onClick={this.props.clicked}>SEND</button>
+          <button onClick={this.submitHandler}>SEND</button>
         </div>
       </form>
     );
