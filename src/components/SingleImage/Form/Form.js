@@ -17,8 +17,8 @@ class Form extends Component {
         <div>
           <input
             type="text"
-            name="name"
-            value={this.props.name}
+            name="userName"
+            value={this.props.userName}
             placeholder="Your Name"
             onChange={this.changeHandler}
           />
@@ -27,8 +27,8 @@ class Form extends Component {
           <textarea
             type="text"
             rows="8"
-            name="comment"
-            value={this.props.comment}
+            name="userComment"
+            value={this.props.userComment}
             onChange={this.changeHandler}
             placeholder="Your Comment"
           />
