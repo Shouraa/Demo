@@ -3,8 +3,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 300px 40px 50px;
   background-color: white;
-  border-radius: 3px;
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.03);
+  border-radius: 0.3rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
 }
 
 .Image .ImgWrapper {
@@ -12,7 +12,7 @@
   min-height: 300px;
   grid-column: 1 / 3;
   grid-row: 1 / 2;
-  border-radius: 3px;
+  border-radius: 0.3rem;
   overflow: hidden;
 }
 
