@@ -18,7 +18,7 @@ class App extends Component {
         "https://api.unsplash.com/photos/?client_id=add2d2d52391495814a84b22b6089261f7133c5ac4b5a22017e11a4c7a6dc60b"
       )
       .then(response => {
-        // console.log(response.data);
+        console.log(response.data);
         this.setState({ images: response.data });
       })
       .catch(error => {

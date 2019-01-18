@@ -1,9 +1,20 @@
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
   background-color: white;
-  /* padding: 0 16px; */
-  font-family: "Roboto", sans-serif;
+  /* padding: 0 3rem; */
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.7;
+  color: rgb(95, 93, 93);
 }
