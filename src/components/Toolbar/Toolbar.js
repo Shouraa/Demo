@@ -12,12 +12,9 @@ const Toolbar = () => (
     </div>
 
     <nav className={classes.MainNav}>
-      <ul>
-        {/* <li>Link</li> */}
-        <NavLink to="//">
-          <li className={classes.Login}>SignUp/Login</li>
-        </NavLink>
-      </ul>
+      <NavLink to="//" className={classes.btn}>
+        Login
+      </NavLink>
     </nav>
   </header>
 );
