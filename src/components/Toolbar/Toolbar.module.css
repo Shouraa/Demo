@@ -21,13 +21,13 @@
   font-family: "Merienda", cursive;
 }
 
-.Toolbar a {
+/* .Toolbar a {
   text-decoration: none;
   color: #9697cb;
   font-weight: bold;
-}
+} */
 
-.Toolbar ul {
+/* .Toolbar ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -35,23 +35,33 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */
 
-.Toolbar li {
+/* .Toolbar li {
   margin: 0 0 0 1.6rem;
   padding: 0.8rem 1.6rem;
-}
+} */
 
-.Login {
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid 1px #9697cb;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  background-color: #fff;
+  font-size: 1.6rem;
   color: #9697cb;
-  background: white;
-  border: 0.1rem solid #9697cb;
-  border-radius: 1.6rem;
 }
 
-.Login:hover,
-.Login:active {
-  color: white;
-  background: #9697cb;
-  border: none;
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
