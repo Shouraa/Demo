@@ -10,9 +10,10 @@ const ImagesGrid = props => {
     return (
       <Image
         src={image.urls.small}
+        likes={image.likes}
         key={image.id}
         id={image.id}
-        caption={image.description}
+        caption={image.caption}
       />
     );
   });
