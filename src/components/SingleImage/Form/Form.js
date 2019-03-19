@@ -7,8 +7,8 @@ class Form extends Component {
     this.props.inputChanged(event);
   };
 
-  submitHandler = () => {
-    this.props.clicked();
+  submitHandler = event => {
+    this.props.clicked(event);
   };
 
   render() {
@@ -17,8 +17,8 @@ class Form extends Component {
         <div>
           <input
             type="text"
-            name="userName"
-            value={this.props.userName}
+            name="name"
+            value={this.props.name}
             placeholder="Your Name"
             onChange={this.changeHandler}
           />
@@ -27,8 +27,8 @@ class Form extends Component {
           <textarea
             type="text"
             rows="8"
-            name="userComment"
-            value={this.props.userComment}
+            name="comment"
+            value={this.props.comment}
             onChange={this.changeHandler}
             placeholder="Your Comment"
           />

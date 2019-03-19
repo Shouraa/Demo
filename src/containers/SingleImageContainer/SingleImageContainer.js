@@ -10,8 +10,8 @@ import axios from "../../axios-singleImagePage";
 
 class SingleImageContainer extends Component {
   state = {
-    imageUrl: "",
-    comments: [],
+    imageUrl: [],
+    comments: [{ author: "Asghar", comment: "Goh bigiran" }],
     likes: null
     // userName: "",
     // userComment: ""
@@ -19,8 +19,9 @@ class SingleImageContainer extends Component {
 
   componentDidMount() {
     this.setState({
-      imageUrl: this.props.image.urls.regular,
-      likes: this.props.image.likes
+      imageUrl: [this.props.image.urls.regular, this.props.image.urls.small],
+      likes: this.props.image.likes,
+      ID: this.props.image.id
     });
   }
 
@@ -40,17 +41,18 @@ class SingleImageContainer extends Component {
       // userName: this.state.userName,
       // userComment: this.state.userComment,
       likes: this.state.likes,
-      imageUrl: this.state.imageUrl,
+      imageUrl: this.state.imageUrl[0],
+      id: this.state.ID,
       comments: this.state.comments
     };
-    this.setState({ userName: "", comment: "" });
+    this.setState({ name: "", comment: "" });
     axios
       .post("/singleImagePage.json", commentData)
       .then(response => {
         console.log(response);
         this.setState({
-          userName: response.userName,
-          comment: response.userComment
+          name: response.name,
+          comment: response.comment
         });
       })
       .catch(err => {
