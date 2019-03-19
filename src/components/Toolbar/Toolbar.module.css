@@ -1,67 +1,53 @@
 .Toolbar {
   width: 100%;
-  height: 9rem;
-  background: white;
-  padding: 0rem 10.7rem;
+  background: wheat;
+  padding: 8px 16px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 90;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.Div {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .Brand {
-  color: #9697cb;
+  color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 4rem;
-  font-family: "Merienda", cursive;
+  font-size: 22px;
 }
 
-/* .Toolbar a {
+.Toolbar a {
   text-decoration: none;
-  color: #9697cb;
+  color: #0e4f1f;
   font-weight: bold;
-} */
+  /* padding: 3px 0; */
+}
 
-/* .Toolbar ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.MainNav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 45px);
+  vertical-align: middle;
+}
 
+.Toolbar ul {
   margin: 0;
   padding: 0;
   list-style: none;
-} */
+}
 
-/* .Toolbar li {
-  margin: 0 0 0 1.6rem;
-  padding: 0.8rem 1.6rem;
-} */
-
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  border: solid 1px #9697cb;
-  padding: 15px 40px;
+.Toolbar li {
   display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  background-color: #fff;
-  font-size: 1.6rem;
-  color: #9697cb;
+  margin: 0 16px;
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.Login {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
