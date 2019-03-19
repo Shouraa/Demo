@@ -1,14 +1,13 @@
-.Images {
-  /* margin: auto 32px; */
-  background-color: #98d5f8;
-  padding-top: 16px;
+.ImagesGrid {
+  background-color: #b1e0f0;
+  padding: 10.5rem;
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-template-rows: repeat(3, 400px);
-  grid-gap: 16px;
+  grid-template-rows: repeat(3, 40rem);
+  grid-gap: 1.6rem;
   align-items: center;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
